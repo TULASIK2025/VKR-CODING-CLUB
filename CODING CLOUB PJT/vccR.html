@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      position: relative;
+    }
+
+    /* Watermark Styling */
+    .watermark {
+      content: 'VKR VNB AND AGK ';
+      position: absolute;
+      font-size: 80px; /* Adjust size as needed */
+      color: rgba(0, 0, 0, 0.05); /* Light black color */
+      transform: rotate(-45deg); /* Rotate for cross direction */
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      white-space: nowrap;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+      pointer-events: none; /* Allow clicks to pass through */
+      z-index: 0; /* Behind everything else */
+    }
+
+    /* Form container */
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      position: relative; /* Required to ensure content aligns correctly */
+      z-index: 1; /* Bring form content above watermark */
+    }
+
+    /* Form elements */
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #6a82fb;
+      box-shadow: 0 0 8px rgba(106, 130, 251, 0.3);
+      outline: none;
+    }
+
+    /* Submit Button */
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #6a82fb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5046e5;
+    }
+
+    /* Mobile Responsive Design */
+    @media (max-width: 400px) {
+      .form-container {
+        width: 100%;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="watermark">VKR VNB AND AGK CC </div>
+  
+  <div class="form-container">
+    <form class="register-form">
+      <h2>REGISTER</h2>
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="1" name="name" placeholder="Your name..." required>
+      
+      <label for="id">Student Id</label>
+      <input type="numeric" id="2" name="id" placeholder="Your student id..." required>
+      
+      <label for="branch">Branch</label>
+      <input type="text" id="3" name="branch" placeholder="Your Branch Name..." required>
+      
+      <label for="sem">Year</label>
+      <input type="numeric" id="4" name="sem" placeholder="Current Semseter..." required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>-->
+ <!-- <link rel="stylesheet" href="styles.css">-->
+  <!--<style type="text/css">
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    }
+    
+    /* Form container */
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+    
+    /* Form elements */
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    input:focus {
+      border-color: #6a82fb;
+      box-shadow: 0 0 8px rgba(106, 130, 251, 0.3);
+      outline: none;
+    }
+    
+    /* Submit Button */
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #6a82fb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #5046e5;
+    }
+    
+    /* Add some transitions for a smoother user experience */
+    input,
+    button {
+      transition: all 0.3s ease;
+    }
+    
+    /* Mobile Responsive Design */
+    @media (max-width: 400px) {
+      .form-container {
+        width: 100%;
+        margin: 0 10px;
+      }
+    }</script>
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form class="register-form">
+      <h2>REGISTER</h2>
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..." required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email..." required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Your password..." required>
+      
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password..." required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+
+
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h2>Register Here</h2>
+        <form>
+            <div class="form-group">
+                <label for="studentid">Student ID</label>
+                <input type="text" class="form-control" id="studentid" placeholder="Enter Student ID">
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch</label>
+                <input type="text" class="form-control" id="branch" placeholder="Enter Branch">
+            </div>
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" id="year" placeholder="Enter Year">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+-->
