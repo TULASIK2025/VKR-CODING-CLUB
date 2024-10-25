@@ -1,0 +1,270 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color:green;/*#f8f9fa; /* Light background for the navbar */
+    padding: 10px 0;
+}
+
+.navbar h2 {
+    font-size: 2rem; /* Adjust the heading size */
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    color:black; /* Link color */
+    padding-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color:black; /* Hover color for links */
+}
+
+ /*.mb-0 {
+            color: yellow;
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 0 0 5px yellow, 
+                         0 0 10px yellow, 
+                         0 0 15px yellow, 
+                         0 0 20px yellow, 
+                         0 0 30px yellow, 
+                         0 0 40px yellow;
+        }*/
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.dropdown {  /*for vistdevelopers*/
+    display: none;  
+    position: absolute;  
+    background-color: white;  
+    border: 1px solid #ccc;  
+  }  
+  .dropdown.active {  
+    display: block;  
+  }  
+   .logo-container {
+        position: absolute;
+        top: 20px; /* Adjust to control vertical positioning */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        padding-top: 20px /* Ensure the logo is in front of the background */
+    }
+
+    .club-logo {
+        width: 500px; /* Adjust size as needed */
+        height: auto;
+    }
+
+/*.container1{  
+        border: 1px solid #000; /* Box border  
+        padding: 10px;          /* Space between text and border  
+        background-color:#9aadbc; /* Background color  
+        margin: 10px;          /* Space outside the box   
+  
+}*/
+
+.vision-mission {
+    background-color:/*#DED6CE /*#f9f9f9 */#D8E2DC;
+}
+
+.carousel-item img {
+    height: 400px;
+}
+/* Basic styling for the section 
+    .upcoming-events {
+      background-color: #f0f0f0;
+      padding: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+ /* Styling for the Upcoming Events title
+    .upcoming-events-title {
+      background-color: #D8E2DC;
+      text-align: center;
+      padding: 10px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Basic styling for the scrolling section */
+    .upcoming-events {
+      background-color:#f1ffc4;
+      padding: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Scrolling effect */
+    .scrolling-text {
+      display: inline-flex;
+      animation: scroll-left 15s linear infinite;
+      font-size: 1.2em;
+    }
+
+    /* Different colors for each event */
+      .event1 { color: #ff6347; } /* Tomato */
+      .event2 { color: #4682b4; } /* Steel Blue */
+      .event3 { color: #32cd32; } /* Lime Green */
+      .event4 { color: #ffa500; } /* Orange */
+      .event5 { color: #8a2be2; } /* Blue Violet */
+      .event6 { color: #ff69b4; } /* Hot Pink */
+      .event7 { color: #2e8b57; } /* Sea Green */
+
+    /* Keyframes for continuous scrolling */
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Scrolling effect 
+    .scrolling-text {
+        background-color:yellow;
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+      font-size: 1.5em;
+    }
+
+    /* Different colors for each event */
+     /* .event1 { color: #ff6347; } /* Tomato */
+     /* .event2 { color: #4682b4; } /* Steel Blue */
+     /* .event3 { color: #32cd32; } /* Lime Green */
+     /* .event4 { color: #ffa500; } /* Orange */
+     /* .event5 { color: violet; }
+    .event6 { color: brown; }
+    .event7 { color: black; }
+
+    /* Keyframes for scrolling 
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }*/
+.social-media-section {
+        background-color: #D8E2DC;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .social-media-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    /* Styling for social media icons */
+    .social-media-icons a {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 2rem;
+        color: #333;
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .social-media-icons a:hover {
+        color: #007bff;
+        transform: scale(1.2);
+    }
+
+    /* Floating animation */
+    .social-media-icons a {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    /* Keyframes for floating effect */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+.dev-info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.review-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* Custom styling for the Visit Developers button */
+.visit-developers-btn {
+    background-color: white;           /* White background */
+    border: 2px solid #000040;         /* Dark blue border */
+    border-radius: 5px;                /* Rounded corners */
+    padding: 10px 20px;                /* Padding for button */
+    font-size: 16px;                   /* Font size */
+    color: #000040;                    /* Dark blue text */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    cursor: pointer;                   /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.visit-developers-btn h5 {
+    margin: 0;
+    display: inline-block;
+}
+
+.visit-developers-btn i {
+    margin-right: 5px;
+    color: #000040;                    /* Icon color */
+}
+
+.visit-developers-btn:hover {
+    background-color: #f0f0f0;         /* Lighter background on hover */
+    color: #000040;                    /* Text color remains dark blue */
+    text-decoration: none;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #000040;                    /* Link color */
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e0e0e0;         /* Background change on hover */
+    border-radius: 3px;
+}
