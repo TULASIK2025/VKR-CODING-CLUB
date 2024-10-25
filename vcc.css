@@ -1,6 +1,19 @@
 body {
     font-family: 'Arial', sans-serif;
 }
+/* For phones */
+@media (max-width: 600px) {
+    .your-class {
+        font-size: 14px;
+    }
+}
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    .your-class {
+        font-size: 16px;
+    }
+}
 .navbar {
     background-color:green;/*#f8f9fa; /* Light background for the navbar */
     padding: 10px 0;
