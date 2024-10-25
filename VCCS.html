@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Coding Cloud</title>
+    <!-- Link Bootstrap for quick styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ac721ecfb.js" crossorigin="anonymous"></script>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Streak Section Styling */
+        .streak-section {
+            background-color: #222;
+            color: #fff;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #2196f3, #32a852);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .streak-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .streak-section p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        #streakCount {
+            font-size: 2rem;
+            color: yellow;
+            font-weight: bold;
+            text-shadow: 1px 1px 10px rgba(255, 255, 0, 0.8);
+        }
+
+        /* Enhancing the Sign-In Button */
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+            font-size: 1.25rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Animated Bell Icon for Thank You */
+        .bell-icon {
+            font-size: 2rem;
+            color: #ffc107;
+            animation: ring 1s infinite alternate;
+        }
+
+        @keyframes ring {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotate(15deg);
+            }
+        }
+
+        /* Fire Animation for Streak */
+        .fire-icon {
+            font-size: 2rem;
+            color: #ff5722;
+            animation: fire-blaze 1s infinite alternate;
+        }
+
+        @keyframes fire-blaze {
+            from {
+                transform: scale(1);
+                color: #ff5722;
+            }
+            to {
+                transform: scale(1.2);
+                color: #ffeb3b;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .streak-section h2 {
+                font-size: 2rem;
+            }
+
+            .streak-section p {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Streak Section -->
+<section class="streak-section py-5">
+    <div class="container text-center">
+        <h2>VKR CODENEST</h2>
+        <p>Ring the bell & show your unwavering support for the coders journey<span id="streakCount"> 0</span> <span class="fire-icon">🔥</span></p>
+        <button id="signInBtn" class="btn btn-success">
+            <i class="fas fa-bell bell-icon"></i>
+        </button>
+    </div>
+</section>
+
+<!-- JavaScript to handle streak -->
+<script>
+    // Initialize streak count, it could be stored in local storage for persistence
+    let streakCount = localStorage.getItem('streak') || 0;
+
+    // Update the initial streak display
+    document.getElementById('streakCount').textContent = streakCount;
+
+    // Handle sign-in button click
+    document.getElementById('signInBtn').addEventListener('click', function() {
+        // Increase streak count
+        streakCount++;
+
+        // Update streak in local storage
+        localStorage.setItem('streak', streakCount);
+
+        // Update the displayed streak count
+        document.getElementById('streakCount').textContent = streakCount;
+    });
+</script>
+
+<!-- Bootstrap and jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <label for="rollnumber">Roll Number</label>
+                <input type="text" class="form-control" id="rollnumber" placeholder="Enter Roll Number">
+            </div>
+            <div class="form-group">
+                <label for="password">Create Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Create Password">
+            </div>
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
+-->
