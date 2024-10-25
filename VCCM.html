@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .team-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #e0f7fa;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #00796b;
+            padding: 15px;
+            margin-bottom: 40px;
+            font-size: 36px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .member-title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .team-member:before {
+            content: '👤';
+            font-size: 50px;
+            display: block;
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+
+        /* Fade-in animation for team members */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .team-member {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: calc(0.2s * var(--i));
+        }
+    </style>
+</head>
+<body>
+
+    <div class="team-section">
+        <h1>OUR EXECUTIVE MEMBERS</h1>
+        <div class="team-container">
+            <div class="team-member" style="--i: 1;">
+                <div class="member-name">A.DURGA SARANYA</div>
+                <div class="member-title">AID</div>
+            </div>
+            <div class="team-member" style="--i: 2;">
+                <div class="member-name">K.TULASI</div>
+                <div class="member-title">AID</div>
+            </div>
+            <div class="team-member" style="--i: 3;">
+                <div class="member-name">A.MADURI</div>
+                <div class="member-title">AID</div>
+            </div>
+            <div class="team-member" style="--i: 4;">
+                <div class="member-name">P.D.N.K.VIJAY</div>
+                <div class="member-title">AID</div>
+            </div>
+            <div class="team-member" style="--i: 5;">
+                <div class="member-name">RAMALAKSHMI</div>
+                <div class="member-title">CSE</div>
+            </div>
+            <div class="team-member" style="--i: 6;">
+                <div class="member-name">M.PALLAVI</div>
+                <div class="member-title">CSE</div>
+            </div>
+            <div class="team-member" style="--i: 7;">
+                <div class="member-name">M.VARDHAN</div>
+                <div class="member-title">CSE</div>
+            </div>
+            <div class="team-member" style="--i: 8;">
+                <div class="member-name">M.VIVEKENANDHA</div>
+                <div class="member-title">AID</div>
+            </div>
+            <div class="team-member" style="--i: 9;">
+                <div class="member-name">M.LAVANYA</div>
+                <div class="member-title">AID</div>
+            </div>
+            <div class="team-member" style="--i: 10;">
+                <div class="member-name">K.LAKSHMAN SAI</div>
+                <div class="member-title">AID</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="rollnumber">Roll Number</label>
+                <input type="text" class="form-control" id="rollnumber" placeholder="Enter Roll Number">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+-->
